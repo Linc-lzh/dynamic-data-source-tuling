@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dynamic_datasource_framework" />
+        <module name="dynamic_datasource" />
+        <module name="dynamic_mybatis" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="01-dynamic_datasource" target="1.8" />
+      <module name="02-dynamic_mybatis" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="01-dynamic_datasource" options="-parameters" />
+      <module name="02-dynamic_mybatis" options="-parameters" />
+      <module name="dynamic_datasource" options="-parameters" />
+      <module name="dynamic_datasource_framework" options="-parameters" />
+      <module name="dynamic_mybatis" options="-parameters" />
+    </option>
+  </component>
+</project>
